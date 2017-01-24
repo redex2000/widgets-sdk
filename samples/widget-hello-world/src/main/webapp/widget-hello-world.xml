@@ -10,7 +10,14 @@
        <p>It's example</p>
         <script language="javascript" type="text/javascript">
               gadgets.util.registerOnLoadHandler(function(){
-                   alert('Hello, world!');
+                   $.ajax({
+                     url: 'http://freegeoip.net/json/',
+                     type: 'get',
+                     dataType: 'json',
+                     success: function(data) {
+   alert(data);
+}
+                   });
               });
         </script>
        ]]>
