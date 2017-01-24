@@ -6,6 +6,7 @@
        <![CDATA[
         <style> h2 { color: #EDB200; } </style>
         <h2>Hello, world!</h2>
+       <p>It's example</p>
         <script language="javascript" type="text/javascript">
               gadgets.util.registerOnLoadHandler(function(){
                    alert('Hello, world!');
