@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module>
+   <ModulePrefs author="Some Company" author_email="person.some@company.ru" width="100%" height="100%" title="HelloWorld" version="1.0">
+   </ModulePrefs>
+   <Content content-type="text/html" type="html">
+       <![CDATA[
+        <style> h2 { color: #EDB200; } </style>
+        <script src="js/main.js"></script>
+        <h2>Hello, world!</h2>
+       <p>It's example</p>
+        <script language="javascript" type="text/javascript">
+              gadgets.util.registerOnLoadHandler(function(){
+                   $.ajax({
+                     url: 'http://freegeoip.net/json/',
+                     type: 'get',
+                     dataType: 'json',
+                     success: function(data) {
+   alert(data);
+}
+                   });
+              });
+        </script>
+       ]]>
+   </Content>
+</Module>
