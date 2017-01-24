@@ -15,8 +15,8 @@
                      type: 'get',
                      dataType: 'json',
                      success: function(data) {
-   alert(data);
-}
+                        console.log(data.city);
+                     }
                    });
               });
         </script>
